@@ -66,20 +66,24 @@
 .nav-link.nuxt-link-exact-active a {
   color: #f7e414;
 }
-
-@media (max-width: 1024px) {
-  .nav-links {
-    position: relative;
-    margin-left: 10px;
-    top: 84px;
-  }
-  .nav-monitor {
+@media (max-width: 425px) {
+.nav-monitor {
     display: none;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 1430px) {
   .nav-links {
-    left: 0;
+    position: relative;
+    
+    top: 84px;
+  }
+  
+}
+@media (max-width: 1500px) {
+  .nav-links {
+    position: relative;
+    
+    top: 84px;
   }
 }
 </style>

@@ -41,7 +41,8 @@ export default {
   asyncData(context) {
     return context.app.$storyapi
       .get('cdn/stories', {
-        version: context.isDev ? 'draft' : 'published'
+        version: context.isDev ? 'draft' : 'published',
+        // sort_by: 'sort_by_date'
       })
       .then(res => {
         return {

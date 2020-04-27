@@ -77,6 +77,8 @@ i.fa {
   }
 }
 @media (max-width: 1024px) {
+  .social-items{
   padding-right: 86px;
+  }
 }
 </style>

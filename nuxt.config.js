@@ -72,7 +72,7 @@ export default {
     ]
   ],
   router: {
-    base: '/'
+    base: '/nuxt-vox/'
   },
   // generate: {
   //   routes: function() {
