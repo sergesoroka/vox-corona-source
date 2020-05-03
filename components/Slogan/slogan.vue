@@ -5,8 +5,12 @@
       <span class="bold">актуальна</span> та
       <span class="bold">перевірена</span> інформація про коронавірус
     </h1>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdlr0tok_3eYFdfb9gK-b8uU_cRz5SG2yPhfBk-ozO1P7KLUg/viewform' target="_blank">
-    <button class="subscr">Повідомити про фейк</button></a>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdlr0tok_3eYFdfb9gK-b8uU_cRz5SG2yPhfBk-ozO1P7KLUg/viewform"
+      target="_blank"
+    >
+      <button class="subscr">Повідомити про фейк</button>
+    </a>
   </div>
 </template>
 <style scoped>

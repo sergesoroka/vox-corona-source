@@ -15,12 +15,31 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      {property: "og:image", content: "https://voxukraine.org/coronavirus/img/COVID-19.gif"},
-      {prefix: "og: http://ogp.me/ns#", property: "og:type", content: "blog"},
-      {prefix: "og: http://ogp.me/ns#", property: "og:title", content: "VoxUkraine"},
-      {prefix: "og: http://ogp.me/ns#", property: "og:description", content: "VoxUkraine — більше ніж найкраща аналітика про Україну"},
-      {prefix: "og: http://ogp.me/ns#", property: "og:url", content: "https://voxukraine.org/coronavirus"},
-      {prefix: "og: http://ogp.me/ns#", property: "og:site_name", content: "VoxUkraine"}
+      {
+        property: 'og:image',
+        content: 'https://voxukraine.org/coronavirus/img/COVID-19.gif'
+      },
+      { prefix: 'og: http://ogp.me/ns#', property: 'og:type', content: 'blog' },
+      {
+        prefix: 'og: http://ogp.me/ns#',
+        property: 'og:title',
+        content: 'VoxUkraine'
+      },
+      {
+        prefix: 'og: http://ogp.me/ns#',
+        property: 'og:description',
+        content: 'VoxUkraine — більше ніж найкраща аналітика про Україну'
+      },
+      {
+        prefix: 'og: http://ogp.me/ns#',
+        property: 'og:url',
+        content: 'https://voxukraine.org/coronavirus'
+      },
+      {
+        prefix: 'og: http://ogp.me/ns#',
+        property: 'og:site_name',
+        content: 'VoxUkraine'
+      }
     ],
     link: [
       {
@@ -48,9 +67,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    {src: '~plugins/ga.js', mode: 'client'}
-    ],
+  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -72,7 +89,7 @@ export default {
     ]
   ],
   router: {
-    base: '/nuxt-vox/'
+    base: '/'
   },
   // generate: {
   //   routes: function() {
