@@ -13,17 +13,17 @@
       </div>
       <ul class="social-items col">
         <li class="youtube-icon">
-          <a href="https://www.youtube.com/channel/UCR6MsnwJpQUJMYbef2vRbvw">
+          <a href="https://www.youtube.com/channel/UCR6MsnwJpQUJMYbef2vRbvw" target="_blank">
             <i class="fa fa-youtube-play"></i>
           </a>
         </li>
         <li class="fb-icon">
-          <a href="https://www.facebook.com/VoxUkraine.Ukranian">
+          <a href="https://www.facebook.com/VoxUkraine.Ukranian" target="_blank">
             <i class="fa fa-facebook-f"></i>
           </a>
         </li>
         <li class="fb-icon">
-          <a href="https://www.facebook.com/VoxCheck">
+          <a href="https://www.facebook.com/VoxCheck" target="_blank">
             <i class="fa fa-facebook-f"></i>
           </a>
         </li>
