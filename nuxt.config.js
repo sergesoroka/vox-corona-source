@@ -28,7 +28,7 @@ export default {
       {
         prefix: 'og: http://ogp.me/ns#',
         property: 'og:description',
-        content: 'VoxUkraine — більше ніж найкраща аналітика про Україну'
+        content: 'ЛИШЕ АКТУАЛЬНА ТА ПЕРЕВІРЕНА ІНФОРМАЦІЯ ПРО КОРОНАВІРУС'
       },
       {
         prefix: 'og: http://ogp.me/ns#',
