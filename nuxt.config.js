@@ -17,7 +17,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://voxukraine.org/coronavirus/img/COVID-19.gif'
+        content: 'https://voxukraine.org/wp-content/uploads/2020/03/covid.jpg'
       },
       { prefix: 'og: http://ogp.me/ns#', property: 'og:type', content: 'blog' },
       {
