@@ -82,14 +82,15 @@ export default {
       {
         accessToken:
           process.env.NODE_ENV == 'production'
-            ? 'PEm9WfOV0kl5bpIG3FLUnQtt'
-            : 'gXLC4KzgA7nZrkD89pQkKAtt',
-        cacheProvider: 'memory'
+            ? 'TlILmEPMRa87IAO0tQdWOAtt'
+            : 'GyCRuwfgz1mgWqrzAd0eagtt',
+        cacheProvider: 'memory',
+        cv: 1541863983
       }
     ]
   ],
   router: {
-    base: '/coronavirus/'
+    base: '/'
   },
   // generate: {
   //   routes: function() {
