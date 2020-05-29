@@ -90,7 +90,7 @@ export default {
     ]
   ],
   router: {
-    base: '/'
+    base: '/coronavirus/'
   },
   // generate: {
   //   routes: function() {
