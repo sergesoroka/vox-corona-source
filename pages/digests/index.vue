@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-  
     <div class="posts">
-    
       <PostPreview
         v-for="post in postsToShow"
         :key="post.id"
@@ -15,7 +13,11 @@
       />
     </div>
     <div class="btn-wrapper">
-      <button v-if="actualPosts.length > 6" class="load-more-btn" @click="showMore">Завантажити матеріали</button>
+      <button
+        v-if="actualPosts.length > 6"
+        class="load-more-btn"
+        @click="showMore"
+      >Завантажити матеріали</button>
     </div>
   </div>
 </template>
@@ -42,7 +44,7 @@ export default {
     return context.app.$storyapi
       .get('cdn/stories', {
         version: context.isDev ? 'draft' : 'published',
-        // sort_by: 'sort_by_date'
+        per_page: 100
       })
       .then(res => {
         return {
@@ -87,7 +89,7 @@ export default {
   border: none;
   font-size: 18px;
   text-align: center;
-  
+
   border-radius: 6px;
   letter-spacing: 0.2px;
   cursor: pointer;

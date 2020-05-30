@@ -1,19 +1,23 @@
 <template>
-<div class="container">
-  <div class="posts">
-    <PostPreview
-      v-for="post in postsToShow"
-      :key="post.id"
-      :title="post.title"
-      :excerpt="post.previewText"
-      :thumbnailImage="post.thumbnailUrl"
-      :id="post.id"
-      :category="post.category"
-      :link="post.link"
-    />
-  </div>
-  <div class="btn-wrapper">
-      <button  v-if="actualPosts.length > 6" class="load-more-btn" @click="showMore">Завантажити матеріали</button>
+  <div class="container">
+    <div class="posts">
+      <PostPreview
+        v-for="post in postsToShow"
+        :key="post.id"
+        :title="post.title"
+        :excerpt="post.previewText"
+        :thumbnailImage="post.thumbnailUrl"
+        :id="post.id"
+        :category="post.category"
+        :link="post.link"
+      />
+    </div>
+    <div class="btn-wrapper">
+      <button
+        v-if="actualPosts.length > 6"
+        class="load-more-btn"
+        @click="showMore"
+      >Завантажити матеріали</button>
     </div>
   </div>
 </template>
@@ -24,7 +28,7 @@ export default {
   components: {
     PostPreview
   },
-  
+
   data() {
     return {
       itemToShow: 6
@@ -38,7 +42,9 @@ export default {
   asyncData(context) {
     return context.app.$storyapi
       .get('cdn/stories', {
-        version: context.isDev ? 'draft' : 'published'
+        version: context.isDev ? 'draft' : 'published',
+        per_page: 100,
+        page: 1
       })
       .then(res => {
         return {
@@ -82,7 +88,7 @@ export default {
   border: none;
   font-size: 18px;
   text-align: center;
-  
+
   border-radius: 6px;
   letter-spacing: 0.2px;
   cursor: pointer;
