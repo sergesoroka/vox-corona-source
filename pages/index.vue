@@ -3,7 +3,7 @@
     <div class="container">
       <div class="item cl-1">
         <PostPreview
-          v-for="post in firstColumnPosts.slice(0, 2)"
+          v-for="post in firstColumnPosts.slice(1, 3)"
           :key="post.id"
           :title="post.title"
           :excerpt="post.previewText"
@@ -28,7 +28,7 @@
 
       <div class="item cl-3-1">
         <PostPreview
-          v-for="post in firstColumnPosts.slice(2, 3)"
+          v-for="post in firstColumnPosts.slice(3, 4)"
           :key="post.id"
           :title="post.title"
           :excerpt="post.previewText"
@@ -77,7 +77,7 @@ export default {
     return context.app.$storyapi
       .get('cdn/stories', {
         version: context.isDev ? 'draft' : 'published',
-        per_page: 100
+        "starts_with": "blog/"
       })
       .then(res => {
         return {
@@ -98,7 +98,7 @@ export default {
   computed: {
     digest: function() {
       return this.posts.filter(function(item) {
-        return item.category === 'digest'
+        return item
       })
     },
     limitPosts: function() {
@@ -106,7 +106,7 @@ export default {
     },
     firstColumnPosts: function() {
       return this.posts.filter(function(item) {
-        return item.category !== 'digest' && item.category !== 'antifake'
+        return item
       })
       // return this.posts.slice(0, 2)
     }

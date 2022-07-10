@@ -44,7 +44,8 @@ export default {
     return context.app.$storyapi
       .get('cdn/stories', {
         version: context.isDev ? 'draft' : 'published',
-        per_page: 100
+        
+         "starts_with": "digests/"
       })
       .then(res => {
         return {

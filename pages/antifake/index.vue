@@ -24,6 +24,7 @@
 
 <script>
 import PostPreview from '@/components/Blog/PostPreview'
+
 export default {
   components: {
     PostPreview
@@ -59,6 +60,7 @@ export default {
           })
         }
       })
+         
   },
   computed: {
     actualPosts: function() {
@@ -66,6 +68,7 @@ export default {
         return i.category === 'antifake'
       })
     },
+      
     postsToShow: function() {
       return this.actualPosts.slice(0, this.itemToShow)
     }

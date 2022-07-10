@@ -5,7 +5,7 @@
         <a href="https://voxukraine.org/uk/">
           <img
             id="logo"
-            src="https://raw.githubusercontent.com/sergesoroka/nuxt-vox/master/_nuxt/img/76693f2.png"
+            src="./../../assets/logo.png"
             width="90"
             height="49"
           />

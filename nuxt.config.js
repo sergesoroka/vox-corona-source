@@ -82,8 +82,8 @@ export default {
       {
         accessToken:
           process.env.NODE_ENV == 'production'
-            ? 'TlILmEPMRa87IAO0tQdWOAtt'
-            : 'GyCRuwfgz1mgWqrzAd0eagtt',
+            ? '2gJRcHnqyYXpBox3RgDiDgtt'
+            : 'EUVV2Jx7a9or3WWfsc8rYAtt',
         cacheProvider: 'memory',
         cv: 1541863983
       }
@@ -92,19 +92,19 @@ export default {
   router: {
     base: '/coronavirus/'
   },
-  // generate: {
-  //   routes: function() {
-  //     return axios
-  //       .get(
-  //         'https://api.storyblok.com/v1/cdn/stories?version=published&token=PEm9WfOV0kl5bpIG3FLUnQtt&cv=' +
-  //           Math.floor(Date.now() / 1e3)
-  //       )
-  //       .then(res => {
-  //         const blogPosts = res.data.stories.map(bp => bp.full_slug)
-  //         return ['/', '/digests', '/antifake', '/monitor']
-  //       })
-  //   }
-  // },
+  generate: {
+    routes: function() {
+      return axios
+        .get(
+          'https://api.storyblok.com/v1/cdn/stories?version=published&token=PEm9WfOV0kl5bpIG3FLUnQtt&cv=' +
+            Math.floor(Date.now() / 1e3)
+        )
+        .then(res => {
+          const blogPosts = res.data.stories.map(bp => bp.full_slug)
+          return ['/', '/digests', '/antifake', '/monitor']
+        })
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
