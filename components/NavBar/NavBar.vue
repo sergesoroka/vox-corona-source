@@ -25,9 +25,9 @@
       <nuxt-link to="/antifake" tag="li" class="nav-link">
         <a>Антифейк</a>
       </nuxt-link>
-      <nuxt-link to="/monitor" tag="li" class="nav-link nav-monitor">
+      <!-- <nuxt-link to="/monitor" tag="li" class="nav-link nav-monitor">
         <a>Оперативний моніторинг</a>
-      </nuxt-link>
+      </nuxt-link> -->
     </ul>
   </nav>
 </template>
