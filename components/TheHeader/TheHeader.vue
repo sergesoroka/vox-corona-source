@@ -2,7 +2,7 @@
   <header class="main-header">
     <div class="container">
       <div class="logo col">
-        <a href="https://voxukraine.org/uk/">
+        <a href="https://voxukraine.org/">
           <!-- <img
             src="./../../assets/logo.png"
             width="90"
